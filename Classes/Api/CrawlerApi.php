@@ -47,25 +47,10 @@ use TYPO3\CMS\Extbase\Object\ObjectManager;
  */
 class CrawlerApi
 {
-    /**
-     * @var QueueRepository
-     */
-    protected $queueRepository;
-
-    /**
-     * @var array
-     */
-    protected $allowedConfigurations = [];
-
-    /**
-     * @var QueryBuilder
-     */
-    protected $queryBuilder;
-
-    /**
-     * @var string
-     */
-    protected $tableName = 'tx_crawler_queue';
+    protected QueueRepository $queueRepository;
+    protected array $allowedConfigurations = [];
+    protected QueryBuilder $queryBuilder;
+    protected string $tableName = 'tx_crawler_queue';
 
     /**
      * @var CrawlerController

@@ -42,16 +42,8 @@ class ProcessService
      * @var int
      */
     private $timeToLive;
-
-    /**
-     * @var \AOE\Crawler\Domain\Repository\ProcessRepository
-     */
-    private $processRepository;
-
-    /**
-     * @var array
-     */
-    private $extensionSettings;
+    private ProcessRepository $processRepository;
+    private array $extensionSettings;
 
     public function __construct()
     {

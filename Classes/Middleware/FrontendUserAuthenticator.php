@@ -37,15 +37,8 @@ use TYPO3\CMS\Frontend\Controller\ErrorController;
  */
 class FrontendUserAuthenticator implements MiddlewareInterface
 {
-    /**
-     * @var string
-     */
-    protected $headerName = 'X-T3CRAWLER';
-
-    /**
-     * @var Context
-     */
-    protected $context;
+    protected string $headerName = 'X-T3CRAWLER';
+    protected Context $context;
 
     public function __construct(?Context $context = null)
     {
