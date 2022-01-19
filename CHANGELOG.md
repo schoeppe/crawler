@@ -13,6 +13,7 @@
 ### Deprecated
 #### Classes
 #### Functions & Properties
+* CrawlerController->drawURLs_PIfilter()
 
 ### Removed
 #### Classes

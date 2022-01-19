@@ -30,6 +30,7 @@ use Psr\Log\NullLogger;
  *
  * @package AOE\Crawler\Tests
  * @covers \AOE\Crawler\Controller\CrawlerController
+ * @covers \AOE\Crawler\Service\ProcessInstructionService
  */
 class CrawlerControllerTest extends UnitTestCase
 {
